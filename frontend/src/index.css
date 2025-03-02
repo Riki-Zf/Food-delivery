@@ -16,3 +16,6 @@ a {
   width: 80%;
   margin: auto;
 }
+.navbar li {
+  cursor: pointer;
+}
