@@ -24,92 +24,69 @@
   color: red;
   cursor: pointer;
 }
-/*  */
 .cart-bottom {
   display: flex;
-  gap: 2rem;
-  padding: 2rem;
-  margin-top: 2rem;
+  justify-content: space-between;
+  gap: max(12vw, 20px);
+  margin-top: 80px;
 }
-
 .cart-total {
+  display: flex;
   flex: 1;
-  background-color: #f8f8f8;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+  gap: 20px;
 }
-
-.cart-total h2 {
-  margin-bottom: 1.5rem;
-  color: #333;
-}
-
 .cart-total-details {
   display: flex;
   justify-content: space-between;
-  padding: 0.8rem 0;
+  color: #555;
 }
-
-.cart-total hr {
-  border: none;
-  border-top: 1px solid #ddd;
-  margin: 0.5rem 0;
+.cart-total h2 {
+  margin: 10px 0px;
 }
-
 .cart-total button {
-  width: 100%;
-  padding: 1rem;
-  margin-top: 1.5rem;
-  background-color: #ff4e4e;
-  color: white;
   border: none;
+  color: white;
+  background-color: tomato;
+  width: max(15vw, 200px);
+  padding: 12px 0px;
   border-radius: 4px;
-  font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s;
 }
-
-.cart-total button:hover {
-  background-color: #ff3333;
-}
-
 .cart-promocode {
   flex: 1;
-  padding: 2rem;
-  background-color: #f8f8f8;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
-
 .cart-promocode p {
-  margin-bottom: 1rem;
-  color: #666;
+  color: #555;
 }
-
 .cart-promocode-input {
+  margin-top: 10px;
   display: flex;
-  gap: 1rem;
-}
-
-.cart-promocode-input input {
-  flex: 1;
-  padding: 0.8rem;
-  border: 1px solid #ddd;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eaeaea;
   border-radius: 4px;
-  outline: none;
 }
-
-.cart-promocode-input button {
-  padding: 0.8rem 1.5rem;
-  background-color: #ff4e4e;
-  color: white;
+.cart-promocode-input input {
   border: none;
+  outline: none;
+  background: transparent;
+  padding-left: 10px;
+}
+.cart-promocode-input button {
+  width: max(10vw, 150px);
+  padding: 12px 5px;
+  background-color: black;
+  border: none;
+  color: white;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s;
 }
-
-.cart-promocode-input button:hover {
-  background-color: #ff3333;
+@media (max-width: 750px) {
+  .cart-bottom {
+    flex-direction: column-reverse;
+  }
+  .cart-promocode {
+    justify-content: start;
+  }
 }
